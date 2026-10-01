@@ -1,6 +1,12 @@
-using UnityEngine;
+using System;
 
-public class data
+namespace HelloWorldApp
 {
-    cout<<"Holle world"
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Cabeza de vrg");
+        }
+    }
 }
