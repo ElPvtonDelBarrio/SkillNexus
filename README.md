@@ -6,7 +6,7 @@ según sus habilidades y experiencia.
 Integrantes
 
 - Antony Quispillo
-- [Nombre del segundo integrante]
+- Elvis Yangari
 - [Nombre del tercer integrante]
 
 Tecnologías
