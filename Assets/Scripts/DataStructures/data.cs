@@ -6,7 +6,7 @@ namespace HelloWorldApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Cabeza de vrg");
+            Console.WriteLine("Edwin Gay");
         }
     }
 }
