@@ -1,17 +1,15 @@
-# AlgoWorks — Asignación inteligente de tareas
+Asignación inteligente de tareas
 
 Prototipo académico que busca recomendar desarrolladores para tareas
 según sus habilidades y experiencia.
 
-El sistema utilizará datos locales de prueba, sin conexión con Jira.
+Integrantes
 
-## Integrantes
-
-- Antony [apellido]
+- Antony Quispillo
 - [Nombre del segundo integrante]
 - [Nombre del tercer integrante]
 
-## Tecnologías
+Tecnologías
 
 - Unity 6000.6.3f1
 - C#
