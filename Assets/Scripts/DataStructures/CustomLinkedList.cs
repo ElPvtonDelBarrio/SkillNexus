@@ -1,5 +1,6 @@
 using System;
 using AlgoWorks.DataStructures;
+
 public class CustomLinkedList<T>
 {
     private Node<T> head;
@@ -42,6 +43,7 @@ public class CustomLinkedList<T>
         current.Next = newNode;
         count++;
     }
+
     public bool Find(T item)
     {
         Node<T> current = head;
@@ -58,6 +60,7 @@ public class CustomLinkedList<T>
 
         return false;
     }
+
     public bool Remove(T item)
     {
         if (head == null)
@@ -88,9 +91,6 @@ public class CustomLinkedList<T>
 
         return false;
     }
-
-
-
 
     public void Traverse(Action<T> action)
     {
