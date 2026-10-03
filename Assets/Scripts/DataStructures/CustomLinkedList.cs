@@ -1,107 +1,107 @@
 using System;
-namespace AlgoWorks.DataStructures;
+
+namespace AlgoWorks.DataStructures
 {
-public class CustomLinkedList<T>
-{
-    private Node<T> head;
-    private int count;
-
-    public CustomLinkedList()
+    public class CustomLinkedList<T>
     {
-        head = null;
-        count = 0;
-    }
+        private Node<T> head;
+        private int count;
 
-    public int Count
-    {
-        get { return count; }
-    }
-
-    public bool IsEmpty()
-    {
-        return count == 0;
-    }
-
-    public void Add(T item)
-    {
-        Node<T> newNode = new Node<T>(item);
-
-        if (head == null)
+        public CustomLinkedList()
         {
-            head = newNode;
-            count++;
-            return;
+            head = null;
+            count = 0;
         }
 
-        Node<T> current = head;
-
-        while (current.Next != null)
+        public int Count
         {
-            current = current.Next;
+            get { return count; }
         }
 
-        current.Next = newNode;
-        count++;
-    }
-    public bool Find(T item)
-    {
-        Node<T> current = head;
-
-        while (current != null)
+        public bool IsEmpty()
         {
-            if (current.Data.Equals(item))
+            return count == 0;
+        }
+
+        public void Add(T item)
+        {
+            Node<T> newNode = new Node<T>(item);
+
+            if (head == null)
             {
-                return true;
+                head = newNode;
+                count++;
+                return;
             }
 
-            current = current.Next;
+            Node<T> current = head;
+
+            while (current.Next != null)
+            {
+                current = current.Next;
+            }
+
+            current.Next = newNode;
+            count++;
         }
 
-        return false;
-    }
-    public bool Remove(T item)
-    {
-        if (head == null)
+        public bool Find(T item)
         {
+            Node<T> current = head;
+
+            while (current != null)
+            {
+                if (current.Data.Equals(item))
+                {
+                    return true;
+                }
+
+                current = current.Next;
+            }
+
             return false;
         }
 
-        if (head.Data.Equals(item))
+        public bool Remove(T item)
         {
-            head = head.Next;
-            count--;
-            return true;
-        }
-
-        Node<T> current = head;
-
-        while (current.Next != null)
-        {
-            if (current.Next.Data.Equals(item))
+            if (head == null)
             {
-                current.Next = current.Next.Next;
+                return false;
+            }
+
+            if (head.Data.Equals(item))
+            {
+                head = head.Next;
                 count--;
                 return true;
             }
 
-            current = current.Next;
+            Node<T> current = head;
+
+            while (current.Next != null)
+            {
+                if (current.Next.Data.Equals(item))
+                {
+                    current.Next = current.Next.Next;
+                    count--;
+                    return true;
+                }
+
+                current = current.Next;
+            }
+
+            return false;
         }
 
-        return false;
-    }
-
-
-
-
-    public void Traverse(Action<T> action)
-    {
-        Node<T> current = head;
-
-        while (current != null)
+        public void Traverse(Action<T> action)
         {
-            action(current.Data);
-            current = current.Next;
+            Node<T> current = head;
+
+            while (current != null)
+            {
+                action(current.Data);
+                current = current.Next;
+            }
         }
     }
-}
 }
