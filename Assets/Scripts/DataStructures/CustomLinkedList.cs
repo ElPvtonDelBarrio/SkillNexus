@@ -1,6 +1,6 @@
 using System;
-using UnityEngine;
-using AlgoWorks.DataStructures;
+namespace AlgoWorks.DataStructures;
+{
 public class CustomLinkedList<T>
 {
     private Node<T> head;
@@ -103,4 +103,5 @@ public class CustomLinkedList<T>
             current = current.Next;
         }
     }
+}
 }
