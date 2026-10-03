@@ -181,7 +181,6 @@ public class DataStructuresTest : MonoBehaviour
 
         Debug.Log("");
         Debug.Log("10 → 30 → null");
-
         Debug.Log("Count = " + list.Count);
     }
 }
