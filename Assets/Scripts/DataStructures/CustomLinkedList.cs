@@ -42,6 +42,55 @@ public class CustomLinkedList<T>
         current.Next = newNode;
         count++;
     }
+    public bool Find(T item)
+    {
+        Node<T> current = head;
+
+        while (current != null)
+        {
+            if (current.Data.Equals(item))
+            {
+                return true;
+            }
+
+            current = current.Next;
+        }
+
+        return false;
+    }
+    public bool Remove(T item)
+    {
+        if (head == null)
+        {
+            return false;
+        }
+
+        if (head.Data.Equals(item))
+        {
+            head = head.Next;
+            count--;
+            return true;
+        }
+
+        Node<T> current = head;
+
+        while (current.Next != null)
+        {
+            if (current.Next.Data.Equals(item))
+            {
+                current.Next = current.Next.Next;
+                count--;
+                return true;
+            }
+
+            current = current.Next;
+        }
+
+        return false;
+    }
+
+
+
 
     public void Traverse(Action<T> action)
     {
