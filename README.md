@@ -7,7 +7,7 @@ Integrantes
 
 - Antony Quispillo
 - Elvis Yangari
-- [Nombre del tercer integrante]
+- Edwin Minga
 
 Tecnologías
 
