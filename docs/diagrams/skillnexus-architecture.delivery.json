@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "d1d57071-04f7-4581-a893-8a1f65827275",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "C:\\Users\\José\\.copilot\\session-state\\6f81f313-16dc-463c-bb1f-a41cd72a9960\\files\\skillnexus-architecture-candidate.json",
+  "output": "D:\\Downloads\\SkillNexus\\docs\\diagrams\\skillnexus-architecture.html",
+  "specification": {
+    "sha256": "35e0e51265ba9dc5f5114003595f5c7e0b2eb4c4177c404544c8870df7bae30a",
+    "bytes": 4194
+  },
+  "artifact": {
+    "sha256": "aa4708e30898b39d8ca63c7086e9aa3283866687fda9d7150c1369b5bc8dc763",
+    "bytes": 753578
+  }
+}
